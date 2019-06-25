@@ -1,0 +1,74 @@
+html,body {
+    padding: 0;
+    margin: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header {
+    background-image: url("../img/floral.jpg");
+    flex: 0 0 40px;
+    text-align: center;
+    padding: 20px;
+}
+footer {
+    background-image: url("../img/floral.jpg");
+    flex: 0 0 80px;
+}
+body > section {
+    background-color: aliceblue;
+    flex: 1 1 auto;
+    flex-direction: row;
+    height: 100%;
+    display: grid;
+    justify-content: top;
+}
+section > main {
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+}
+section > main > img {
+    padding: 20px;
+}
+form {
+    clear: both;
+    background-color: lightyellow;
+    width: 40%;
+    min-width: 275px;
+    padding: 10px;
+    margin: 0 auto;
+}
+form input[type=text], textarea {
+    width: 90%;
+    padding: 5px;
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+}
+#radio, #check {
+    padding: 5px;
+}
+form input[type=submit] {
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form textarea {
+    min-height: 60px;
+    max-height: 100px;
+    resize: vertical;
+}
