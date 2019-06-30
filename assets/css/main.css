@@ -36,15 +36,37 @@ section > main {
 section > main > img {
     padding: 20px;
 }
+.container {
+    width: 100%;
+    max-width: 600px;
+    max-height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.resp-container {
+    position: relative;
+    width: 100%;
+	padding-top: 56.25%; /* 16:9 */
+    overflow: hidden;      
+}
+.resp-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
 form {
     clear: both;
-    background-color: lightyellow;
+    background-color: lightgoldenrodyellow;
     width: 40%;
     min-width: 275px;
+    border-radius: 10px;
     padding: 10px;
     margin: 0 auto;
 }
-form input[type=text], textarea {
+form input[type=text] {
     width: 90%;
     padding: 5px;
     border: 0;
@@ -62,13 +84,8 @@ form input[type=submit] {
     color: black;
     padding: 16px 32px;
     text-decoration: none;
+    font-weight: bold;
     margin: 10px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-form textarea {
-    min-height: 60px;
-    max-height: 100px;
-    resize: vertical;
 }
